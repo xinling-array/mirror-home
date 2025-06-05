@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>晨翾魔方 | 鏡像站 v3.1</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f6f6f6;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      color: #111;
+    }
+    p {
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <h1>晨翾魔方｜鏡像站 v3.1</h1>
+  <p>鏡像站已部署成功，歡迎進入格式宇宙。</p>
+</body>
+</html>
