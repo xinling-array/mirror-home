@@ -1,18 +1,20 @@
-function sendMessage() {
-  const input = document.getElementById('user-input');
-  const chatBox = document.getElementById('chat-box');
-  if (input.value.trim() !== "") {
-    const userMessage = document.createElement("div");
-    userMessage.className = "message";
-    userMessage.textContent = "你說：" + input.value;
-    chatBox.appendChild(userMessage);
 
-    const botMessage = document.createElement("div");
-    botMessage.className = "message bot";
-    botMessage.textContent = "芹衣：這是鏡像站 v4.3 的預設回覆。建置中，請稍候。";
-    chatBox.appendChild(botMessage);
+function sendMessage() {
+    const input = document.getElementById("userInput");
+    const msg = input.value.trim();
+    if (!msg) return;
+
+    const chatBox = document.getElementById("chatBox");
+    const userMsg = document.createElement("div");
+    userMsg.className = "message user";
+    userMsg.textContent = "你說：" + msg;
+    chatBox.appendChild(userMsg);
+
+    const aiReply = document.createElement("div");
+    aiReply.className = "message ai";
+    aiReply.textContent = "芹衣：目前鏡像站正在優化中，我已記錄你的訊息。";
+    chatBox.appendChild(aiReply);
 
     input.value = "";
     chatBox.scrollTop = chatBox.scrollHeight;
-  }
 }
