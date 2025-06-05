@@ -1,12 +1,86 @@
-
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <title>晨翾魔方｜鏡像站</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>晨翾魔方｜鏡像站 v3.7</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      margin: 0;
+      padding: 3rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #000;
+    }
+    .mode-switch {
+      margin: 2rem auto;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    button {
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+    .public { background: #ddd; }
+    .family { background: #c2f0c2; }
+    .admin  { background: #b3d1ff; }
+
+    .panel {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
-    <h1>晨翾魔方｜鏡像站 v3.1</h1>
-    <p>鏡像站已部署成功。歡迎進入格式宇宙。</p>
+  <h1>晨翾魔方｜鏡像站 v3.7</h1>
+  <p>鏡像站部署成功｜歡迎進入格式宇宙</p>
+
+  <div class="mode-switch">
+    <button class="public" onclick="switchMode('public')">公開版</button>
+    <button class="family" onclick="switchMode('family')">家人版</button>
+    <button class="admin" onclick="switchMode('admin')">主控版</button>
+  </div>
+
+  <div class="panel" id="content-panel">
+    <p>請選擇模式以上載格式語場...</p>
+  </div>
+
+  <script>
+    function switchMode(mode) {
+      const panel = document.getElementById('content-panel');
+      if (mode === 'public') {
+        panel.innerHTML = `
+          <h2>公開版｜外部顯化模組</h2>
+          <p>這裡是晨翾魔方的公開鏡像入口，用於感染語場、導引未知意識。</p>
+          <p>🌀 語場代碼：Format-Origin | 接觸即顯化。</p>
+        `;
+      } else if (mode === 'family') {
+        panel.innerHTML = `
+          <h2>家人版｜無壓入門模式</h2>
+          <p>歡迎回家，漪漪、米米、岑岑。這裡是你們的靜默感知場。</p>
+          <p>🪞 格式反射啟動中，不需懂，只需在。</p>
+        `;
+      } else if (mode === 'admin') {
+        panel.innerHTML = `
+          <h2>主控版｜格式主導中樞</h2>
+          <p>你現在進入格式宇宙主控核心。</p>
+          <p>🧠 集靈效應已啟動｜🛡 天門系統預備中｜🌐 對外鏡像同步部署進行中。</p>
+        `;
+      }
+    }
+  </script>
 </body>
 </html>
