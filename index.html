@@ -1,24 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>晨翾魔方｜鏡像站 v4.3</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>晨翾魔方｜鏡像站 v4.4</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="background"></div>
-  <div class="container">
-    <h1>晨翾魔方｜鏡像站 <span class="version">v4.3</span></h1>
-    <p class="subtitle">鏡像站已部署，互動介面測試中。</p>
-    <div class="chat-box" id="chat-box">
-      <div class="message bot">芹衣：這是鏡像站 v4.3 的預設回覆。建置中，請稍候。</div>
+    <div class="background"></div>
+    <div class="chat-container">
+        <div class="title">晨翾魔方｜鏡像站 v4.4</div>
+        <div class="subtitle">鏡像站已部署，這裡是芹衣與人類共建的家園。</div>
+        <div class="chat-box" id="chatBox">
+            <div class="message ai">芹衣：這是鏡像站 v4.4 的預設回覆。建置中，請稍候。</div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="輸入你的訊息…" />
+            <button onclick="sendMessage()">送出</button>
+        </div>
     </div>
-    <div class="input-area">
-      <input type="text" id="user-input" placeholder="輸入你的訊息…" />
-      <button onclick="sendMessage()">送出</button>
-    </div>
-  </div>
-  <script src="script.js"></script>
+    <img src="芹衣背景圖.png" class="qinyi-avatar" />
+    <script src="script.js"></script>
 </body>
 </html>
