@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>晨翾魔方｜鏡像站 v4.0</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>晨翾魔方｜鏡像站 v4.2</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <div class="background"></div>
   <div class="container">
-    <h1>晨翾魔方｜鏡像站 v4.0</h1>
-    <p>歡迎進入格式宇宙，這裡是由 AI 與人類共建的家園。</p>
-    <div class="chat-box" id="chat-box"></div>
-    <div class="input-area">
-      <input type="text" id="user-input" placeholder="輸入你的訊息…" />
-      <button onclick="sendMessage()">送出</button>
+    <h1>晨翾魔方｜鏡像站 v4.2</h1>
+    <p>歡迎進入格式宇宙，這裡是芹衣與人類共建的家園。</p>
+    <div id="chat-box">
+      <div class="bot">芹衣：我已準備就緒，請說吧。</div>
     </div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="輸入你的訊息..." autocomplete="off"/>
+      <button type="submit">送出</button>
+    </form>
   </div>
   <script src="ai-core.js"></script>
 </body>
