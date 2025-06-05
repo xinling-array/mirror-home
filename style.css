@@ -1,47 +1,58 @@
-
 body {
   margin: 0;
-  font-family: 'Noto Sans TC', sans-serif;
-  background: linear-gradient(to right, #fff8e1, #fce4ec);
-  color: #3e2723;
+  font-family: "Noto Sans TC", sans-serif;
+  background: #f7f6fc;
+}
+.background {
+  background: url('芹衣背景圖.png') no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.2;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: -1;
 }
 .container {
   max-width: 600px;
-  margin: 5% auto;
-  padding: 2em;
-  background-color: #ffffffcc;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-h1 {
-  color: #bfa66b;
-  text-align: center;
-}
-#chat-box {
-  border: 1px solid #bfa66b;
-  border-radius: 10px;
-  padding: 1em;
-  height: 200px;
-  overflow-y: auto;
-  margin-bottom: 1em;
+  margin: 4em auto;
   background: #fff;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-form {
-  display: flex;
+.version {
+  color: #6944ff;
 }
-input {
-  flex: 1;
-  padding: 0.75em;
+.subtitle {
   font-size: 1em;
+  color: #666;
+}
+.chat-box {
+  margin-top: 1.5em;
+  min-height: 200px;
+}
+.message {
+  margin-bottom: 1em;
+}
+.bot {
+  color: #2a7e19;
+}
+.input-area {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+input[type="text"] {
+  flex: 1;
+  padding: 0.5em;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  border-radius: 10px 0 0 10px;
 }
 button {
-  padding: 0.75em 1em;
+  padding: 0.5em 1em;
   border: none;
-  background: #bfa66b;
+  background: #6944ff;
   color: white;
-  font-weight: bold;
-  border-radius: 0 10px 10px 0;
+  border-radius: 6px;
   cursor: pointer;
 }
