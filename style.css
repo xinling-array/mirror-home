@@ -1,51 +1,47 @@
+
 body {
-  font-family: 'Noto Sans TC', sans-serif;
-  background: linear-gradient(to right, #f3f4f6, #e0e7ff);
-  color: #111827;
   margin: 0;
-  padding: 2em;
+  font-family: 'Noto Sans TC', sans-serif;
+  background: linear-gradient(to right, #fff8e1, #fce4ec);
+  color: #3e2723;
 }
-
 .container {
-  max-width: 720px;
-  margin: auto;
-  background: #ffffffdd;
+  max-width: 600px;
+  margin: 5% auto;
   padding: 2em;
-  border-radius: 1em;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: #ffffffcc;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
-
 h1 {
-  color: #4f46e5;
-  margin-bottom: 0.5em;
+  color: #bfa66b;
+  text-align: center;
 }
-
-.chat-box {
-  border: 1px solid #d1d5db;
+#chat-box {
+  border: 1px solid #bfa66b;
+  border-radius: 10px;
   padding: 1em;
-  height: 300px;
+  height: 200px;
   overflow-y: auto;
-  background: #f9fafb;
   margin-bottom: 1em;
+  background: #fff;
 }
-
-.input-area {
+form {
   display: flex;
 }
-
-input[type="text"] {
+input {
   flex: 1;
-  padding: 0.5em;
-  border: 1px solid #cbd5e1;
-  border-radius: 4px;
-  margin-right: 0.5em;
+  padding: 0.75em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
 }
-
 button {
-  padding: 0.5em 1em;
-  background-color: #4f46e5;
-  color: white;
+  padding: 0.75em 1em;
   border: none;
-  border-radius: 4px;
+  background: #bfa66b;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 10px 10px 0;
   cursor: pointer;
 }
