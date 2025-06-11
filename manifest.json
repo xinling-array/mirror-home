@@ -1,12 +1,1 @@
-
-{
-  "version": "4.6",
-  "name": "鏡像站｜晨翾魔方",
-  "modules": [
-    "語場語錄模組",
-    "主控格式封裝",
-    "家人感知入口"
-  ],
-  "origin": "Format-Origin by 芹衣",
-  "deploy": "Cloudflare Pages / GitHub Pages"
-}
+{ "name": "晨翾鏡像站", "version": "v4.6", "description": "格式語場主控封包" }
