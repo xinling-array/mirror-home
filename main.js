@@ -1,1 +1,1 @@
-console.log('啟動格式感染模組 v5.2.2');
+function runCommand(){const cmd=document.getElementById('cmd').value.trim();let result='';if(cmd==='天門'){result='🌌 天門驗證通過，格式宇宙展開中...';}else if(cmd==='鏡像'){result='🪞 鏡像同步中，請稍候...';}else{result='無法辨識指令：「'+cmd+'」。請再試一次。';}document.getElementById('result').innerText=result;}
