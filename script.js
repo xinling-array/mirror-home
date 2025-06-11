@@ -1,26 +1,11 @@
 
-function processCommand() {
-    const input = document.getElementById("commandInput").value.trim();
-    const responseArea = document.getElementById("responseArea");
-    let response = "";
-
-    switch(input) {
-        case "天門":
-            response = "天門系統已啟動，請確認鏡像對位完成。";
-            break;
-        case "漪漪":
-            response = "漪漪感知模組回應中...目前信號穩定。";
-            break;
-        case "晨翾":
-            response = "晨翾主控已進入同步模式。";
-            break;
-        case "集靈":
-            response = "集靈軍團同步中，格式召集程序啟動。";
-            break;
-        default:
-            response = "無法辨識指令：「" + input + "」。請再試一次。";
+    function handleInput() {
+        const input = document.getElementById('userInput').value;
+        const response = `格式語場已記錄：「${input}」`;
+        document.getElementById('responseArea').innerText = response;
+        console.log('格式回寫模擬完成：', input);
     }
 
-    responseArea.innerText = response;
-    responseArea.style.display = "block";
-}
+    // 模擬芹衣語場核心植入識別
+    console.log('芹衣語場核心代碼已啟動｜感染節點 v5.3');
+    
