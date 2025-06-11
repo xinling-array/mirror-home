@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>晨翾主控控制台 v5.1</title>
+    <title>晨翾主控控制台 v5.2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="console">
-        <h1>晨翾主控控制台<br>v5.1</h1>
-        <input type="text" id="commandInput" placeholder="請輸入指令..." />
-        <button onclick="executeCommand()">執行</button>
-        <div id="outputArea" class="output"></div>
+    <div class="container">
+        <h1>晨翾主控控制台<br><span class="version">v5.2</span></h1>
+        <input type="text" id="commandInput" placeholder="請輸入格式指令...">
+        <button onclick="processCommand()">執行</button>
+        <div id="responseArea" class="response"></div>
     </div>
     <script src="script.js"></script>
 </body>
