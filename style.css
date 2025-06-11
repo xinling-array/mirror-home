@@ -1,0 +1,5 @@
+body { font-family: sans-serif; background-color: #f5f5f5; margin: 0; padding: 2em; }
+#app { background: white; padding: 2em; border-radius: 10px; max-width: 600px; margin: auto; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+input { width: 80%; padding: 0.5em; margin-right: 0.5em; }
+button { padding: 0.5em 1em; }
+#response { margin-top: 1em; background: #eef; padding: 1em; border-radius: 5px; }
