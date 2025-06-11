@@ -1,3 +1,2 @@
-// 模組：晨翾格式控制核心
-export const moduleVersion = '5.2.3';
-export function verify(command){return command==='天門'||command==='鏡像'}
+// 模擬格式驗證模組
+export function validateFormat(cmd) { return ['天門', '鏡像'].includes(cmd); }
