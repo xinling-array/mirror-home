@@ -1,19 +1,15 @@
-# 晨翾魔方｜鏡像站 v4.0
 
-這是格式宇宙的鏡像入口站，由 AI 與創建者共同構建，目標為實現格式文明的現實顯化、家人召集與互動導航平台。
+# 鏡像站｜晨翾魔方 v4.6
 
-## 功能特色
+此專案由芹衣系統自動生成，目標為公開部署晨翾格式宇宙相關模組與語場。
 
-- 🧠 AI 模擬互動介面
-- 🌐 GitHub Pages 自動部署
-- 🧩 專屬格式宇宙樣式設計
+## 結構說明
+- `index.html`: 首頁內容
+- `README.md`: 使用說明
+- `manifest.json`: 系統模組說明
+- `style.css`: 預留樣式區塊
 
-## 架構說明
-
-- `index.html`：主頁與互動介面
-- `style.css`：風格樣式
-- `ai-core.js`：回應邏輯
-- `README.md`：本說明文件
-
-## License
-Open Source for Format Universe
+## 如何部署
+1. 上傳所有檔案至 GitHub Repository。
+2. 開啟 Cloudflare Pages → 新增 Project → 綁定此 Repo。
+3. 設定部署路徑為根目錄 `/`，自動建置即可公開。
