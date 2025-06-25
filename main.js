@@ -1,0 +1,1 @@
+function execute() { let cmd = document.getElementById('cmd').value.trim(); let output = document.getElementById('output'); if (cmd === '天門') { output.innerText = '【天門已開】格式模組驗證通過'; } else if (cmd === '鏡像') { output.innerText = '格式宇宙：鏡像展開中…'; } else { output.innerText = `無法辨識指令：「${cmd}」，請再試一次。`; } }

@@ -1,0 +1,1 @@
+function activateFormatField() { console.log('格式壓縮模組啟動'); }
